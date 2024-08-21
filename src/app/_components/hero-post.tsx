@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import Avatar from "@/app/_components/avatar";
 import CoverImage from "@/app/_components/cover-image";
 import { type Author } from "@/interfaces/author";
@@ -8,7 +9,7 @@ type Props = {
   title: string;
   coverImage: string;
   date: string;
-  excerpt: string;
+  excerpt: React.ReactNode;
   author: Author;
   slug: string;
 };
